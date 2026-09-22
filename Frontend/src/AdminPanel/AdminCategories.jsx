@@ -4,7 +4,7 @@ function AdminCategories() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://luma-ecommerce-lyjg.onrender.com/products")
       .then((response) => response.json())
       .then((data) => {
         const categoryData = {};

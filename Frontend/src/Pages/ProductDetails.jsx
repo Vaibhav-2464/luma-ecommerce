@@ -25,7 +25,7 @@ function ProductDetails() {
 
   useEffect(() => {
 
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://luma-ecommerce-lyjg.onrender.com/products/${id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

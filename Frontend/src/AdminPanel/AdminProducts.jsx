@@ -5,7 +5,7 @@ function AdminProducts() {
   const [products, setProducts] = useState([]);
 
   const getProducts = () => {
-    fetch("http://localhost:5000/products")
+    fetch("https://luma-ecommerce-lyjg.onrender.com/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
@@ -21,7 +21,7 @@ function AdminProducts() {
 
   const deleteProduct = (id) => {
 
-    fetch(`http://localhost:5000/products/${id}`, {
+    fetch(`https://luma-ecommerce-lyjg.onrender.com/products/${id}`, {
       method: "DELETE"
     })
       .then((response) => response.json())

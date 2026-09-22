@@ -6,7 +6,7 @@ function Shop() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://luma-ecommerce-lyjg.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.log(error));

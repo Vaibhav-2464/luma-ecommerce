@@ -6,7 +6,7 @@ function AdminOrders() {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/orders")
+    fetch("https://luma-ecommerce-lyjg.onrender.com/orders")
       .then((response) => response.json())
       .then((data) => {
         setOrders(data);

@@ -26,7 +26,7 @@ function Dashboard() {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/admin/stats")
+    fetch("https://luma-ecommerce-lyjg.onrender.com/admin/stats")
       .then((response) => response.json())
       .then((data) => {
         setStats(data);
@@ -36,7 +36,7 @@ function Dashboard() {
       });
 
 
-    fetch("http://localhost:5000/admin/sales")
+    fetch("https://luma-ecommerce-lyjg.onrender.comv/admin/sales")
       .then((response) => response.json())
       .then((data) => {
         setSales(data);
@@ -46,7 +46,7 @@ function Dashboard() {
       });
 
 
-  fetch("http://localhost:5000/admin/categories")
+  fetch("https://luma-ecommerce-lyjg.onrender.com/admin/categories")
   .then((response) => response.json())
  .then((data) => {
   console.log("CATEGORIES:", data);
@@ -63,7 +63,7 @@ function Dashboard() {
     console.log(error);
   });
 
-fetch("http://localhost:5000/admin/order-status")
+fetch("https://luma-ecommerce-lyjg.onrender.com/admin/order-status")
   .then((response) => response.json())
   .then((data) => {
   console.log("ORDER STATUS:", data);

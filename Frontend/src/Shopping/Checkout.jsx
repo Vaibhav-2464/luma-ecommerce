@@ -30,7 +30,7 @@ const navigate = useNavigate();
       total = total + Number(item.price);
     });
 
-    fetch("http://localhost:5000/orders", {
+    fetch("https://luma-ecommerce-lyjg.onrender.com/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
