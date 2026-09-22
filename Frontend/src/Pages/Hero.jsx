@@ -41,7 +41,7 @@ function Hero() {
     {/* Right */}
     <div className="h-[450px] bg-gray-200 rounded-2xl overflow-hidden">
       <img
-        src="/public//images/Hero.jpg"
+        src="/images/Hero.jpg"
         alt="LUMA collection"
         className="w-full h-full object-cover"
       />
